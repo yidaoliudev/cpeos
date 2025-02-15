@@ -1,0 +1,29 @@
+/*
+  配置信息：wan接口配置信息。
+  文件存放路径：/mnt/agent/wan_conf.json
+ */
+
+ /* 如果是dhcp方式（默认），内容信息固定，参考如下。 */
+{
+    "WanPorts":[
+        {
+            "Name":"wan1",
+            "Protocol":"dhcp",
+            "IpAddr":"",
+            "Gateway":""
+        }
+    ]
+}
+
+
+/* 如果是static方式，内容根据实际的地址信息填写，参考如下。 */
+{
+    "WanPorts":[
+        {
+            "Name":"wan1",
+            "Protocol":"static",
+            "IpAddr":"10.88.32.172/24",
+            "Gateway":"10.88.32.1"
+        }
+    ]
+}

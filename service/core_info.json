@@ -1,0 +1,10 @@
+/*
+  配置信息有：CPE Sn以及Core信息。
+ */
+
+{
+    "Sn":"CPE202301001",
+    "CoreAddress":"router-wan-dev.hzk8s.com",
+    "CoreProto":"http",
+    "CorePort":80
+}

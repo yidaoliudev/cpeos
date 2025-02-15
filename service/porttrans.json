@@ -1,0 +1,12 @@
+/* 硬件选型确定以后，镜像中设置不同的 porttrans.json
+   其中，内容可以是接口名称，或者是Mac地址。
+*/
+{
+    "wans":[
+        {"name":"wan1", "device":"eth0"}
+    ],
+    "lans":[
+        {"name":"lan1", "device":"eth1"},
+        {"name":"lan2", "device":"08:00:27:5b:fe:2b"}
+    ]
+}
