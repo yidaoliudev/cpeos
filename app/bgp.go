@@ -717,7 +717,7 @@ func monitorBgpInfo(ctx context.Context) error {
 	for {
 		select {
 		case <-tick.C:
-			// 假如一次获取所有的vrf的bgp邻居和路由可能上报了额外的邻居状态和本地发起的路由，不使用本地数据库信息的话不好做区分
+			// 假如一次获取所有的vrf的bgp邻居和路由可能上报了额外的邻居状态和本地发起的路由，不使用本地数据库信息的话不好做区
 			//var keys = []string{config.BgpConfPath}
 			bgpData, _, err := mceetcd.EtcdGetValueWithCheck(config.BgpConfPath)
 			if err != nil {
